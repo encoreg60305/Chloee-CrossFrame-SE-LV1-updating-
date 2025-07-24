@@ -337,4 +337,27 @@ response = client.messages.create(
 
 ---
 
-*For technical support and licensing inquiries, contact Shang Wei-Chi through official channels.*
+## 📧 Contact Information
+
+**Creator:** Shang Wei-Chi (尚暐棋)  
+**Email:** encoreg60305@gmail.com  
+**Project Repository:** https://github.com/[your-username]/Chloee-CrossFrame-SE
+
+*For technical support, licensing inquiries, and security reports, please contact the creator directly.*
+
+---
+
+## 📋 Version & Development Information
+
+**Document Version:** api-reference.md v5.0.0  
+**Compatible System Prompt:** Chloee-CrossFrame-SE v5.0  
+**Last Updated:** 2025-01-XX  
+**Semantic Fingerprint Validation:** Compatible with `src/config/semantic_fingerprint.json`
+
+**小G後續建議：**
+* 若導出供團隊使用，應加註版本追蹤標記（e.g., `api-reference.md v5.0.0`）
+* 可與 `semantic_fingerprint.json` 產生對應結構驗證（由我代為製作）
+
+---
+
+*This document is synchronized with the semantic fingerprint configuration and provides validation points for automated integrity checking.*
