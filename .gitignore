@@ -1,46 +1,212 @@
-# API Keys and Secrets
+# Chloee-CrossFrame-SE .gitignore
+# Protecting intellectual property and sensitive deployment data
+
+# ========================================
+# 🔐 CRITICAL SECURITY - API Keys & Secrets
+# ========================================
 *.key
 *.secret
 .env
+.env.local
+.env.production
 config/api_keys.json
+config/secrets.json
+anthropic_api_key.txt
+openai_api_key.txt
 
-# System Prompt Modifications (to prevent unauthorized changes)
+# ========================================
+# 🛡️ PERSONALITY FRAMEWORK PROTECTION
+# ========================================
+# Prevent unauthorized system prompt modifications
 src/system-prompt/*_modified.md
+src/system-prompt/*_cracked.md
+src/system-prompt/*_extracted.md
 src/system-prompt/unauthorized_*
+src/system-prompt/temp_*
+src/system-prompt/backup_*
 
-# Personal Deployment Configurations
-deployments/personal/
-deployments/*/api_keys/
+# Prevent semantic fingerprint tampering
+src/config/semantic_fingerprint_modified.json
+src/config/*_cracked.json
 
-# Commercial License Files (for public repo)
+# ========================================
+# 💼 COMMERCIAL & LEGAL PROTECTION
+# ========================================
+# Commercial license files (for public repo)
 legal/commercial_licenses/
 legal/active_contracts/
+legal/client_agreements/
+legal/revenue_sharing/
 
-# Test Results with Sensitive Data
+# Personal deployment configurations
+deployments/personal/
+deployments/private/
+deployments/*/api_keys/
+deployments/*/secrets/
+deployments/commercial/*/
+
+# ========================================
+# 📊 SENSITIVE TEST DATA
+# ========================================
+# Test results with personal/sensitive data
 tests/results/personal_*
+tests/results/private_*
 tests/logs/api_responses_*
+tests/logs/conversation_*
+tests/debug/full_conversations/
 
-# Platform-Specific Generated Files
+# Personality testing data
+tests/personality_extraction/
+tests/reverse_engineering/
+tests/tampering_attempts/
+
+# ========================================
+# 🖥️ PLATFORM-SPECIFIC FILES
+# ========================================
+# AI Platform generated files
 *.anthropic
 *.openai
 *.claude
+*.gemini
+*.xai
 
-# Backup Files
+# Deployment artifacts
+deployment_*.log
+platform_sync_*.json
+cross_platform_*.backup
+
+# ========================================
+# 💾 BACKUP & TEMPORARY FILES
+# ========================================
 *.backup
 *.bak
+*.tmp
+*.temp
 *~
-
-# OS Generated Files
-.DS_Store
-Thumbs.db
-
-# IDE Files
-.vscode/
-.idea/
+*.orig
 *.swp
 *.swo
 
-# Python Cache (if any scripts added)
+# Archive files (might contain sensitive data)
+*.zip
+*.tar.gz
+*.rar
+archive/
+
+# ========================================
+# 🖱️ OS & SYSTEM FILES
+# ========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ========================================
+# 🛠️ DEVELOPMENT TOOLS
+# ========================================
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Editor temporary files
+*.swp
+*.swo
+*.un~
+
+# ========================================
+# 🐍 PYTHON SPECIFIC (if scripts added)
+# ========================================
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ========================================
+# 📝 DOCUMENTATION DRAFTS
+# ========================================
+# Prevent accidental exposure of draft docs
+docs/drafts/
+docs/internal/
+docs/confidential/
+*.draft.md
+*_wip.md
+*_internal.md
+
+# ========================================
+# 🔄 VERSION CONTROL
+# ========================================
+# Git specific
+.git/
+*.patch
+*.diff
+
+# ========================================
+# 🚨 SECURITY INCIDENTS
+# ========================================
+# Security incident logs
+security/incidents/
+security/breach_reports/
+security/vulnerability_scans/
+incident_*.log
+breach_*.json
+
+# ========================================
+# 📈 ANALYTICS & MONITORING
+# ========================================
+# Usage analytics (might contain personal data)
+analytics/personal/
+analytics/user_data/
+analytics/conversation_logs/
+usage_stats_detailed.json
+
+# ========================================
+# 🔗 INTEGRATION TOKENS
+# ========================================
+# Third-party service tokens
+github_token.txt
+discord_webhook.txt
+slack_token.txt
+telegram_bot_token.txt
+
+# ========================================
+# END OF GITIGNORE
+# ========================================
