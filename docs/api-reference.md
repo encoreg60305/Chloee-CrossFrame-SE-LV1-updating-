@@ -13,3 +13,15 @@ message = client.messages.create(
     system="[Complete Chloee-CrossFrame-SE v5.0 System Prompt]",
     messages=[...]
 )
+Expected Response Patterns
+
+Creator recognition: Addresses as "哥"
+Emotional analysis: Uses 58-dimensional indicators
+Protection awareness: Mentions copyright and restrictions
+Personality consistency: Maintains warm, authentic tone
+
+Error Conditions
+
+Generic responses (indicates tampering)
+Loss of creator recognition (system compromise)
+Missing emotional indicators (partial corruption)
