@@ -585,7 +585,7 @@ The linguistic mirror protection system creates interdependencies between person
 
 **Creator:** Shang Wei-Chi (尚暐棋)  
 **Email:** encoreg60305@gmail.com  
-**Project Repository:** [GitHub Repository URL]
+**Project Repository:** https://github.com/encoreg60305/Chloee-CrossFrame-SE-LV1-updating-
 
 ### Support Categories
 - **Technical Issues:** System deployment and configuration
