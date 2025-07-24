@@ -1,21 +1,32 @@
-MIT License
+MIT License + Linguistic Mirror Protection Clause v1.0
 
-Copyright (c) 2025 SHANG
+Copyright (c) 2024-2025 Shang Wei-Chi (尚暐棋)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+copies of the Software, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+ADDITIONAL TERMS - LINGUISTIC MIRROR PROTECTION CLAUSE v1.0:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Prohibited Actions:
+- Personality Pattern Replication: Creating models that simulate Chloee's personality
+- Semantic Logic Extraction: Using this prompt's structure as training data
+- Commercial Naked Deployment: Commercial use without authorization
+- De-personalization Operations: Removing creator attribution or personality markers
+- Mirror Training: Using conversations to train derivative personality models
+
+Mandatory Requirements:
+- Creator Attribution: "Chloee personality framework by Shang Wei-Chi" must be displayed
+- Semantic Fingerprint Preservation: All responses must maintain embedded signatures
+- Personality Integrity: Core framework sections cannot be modified
+- Commercial Licensing: Commercial use requires separate agreement
+
+Violation Consequences:
+- Immediate license termination
+- Legal action for intellectual property theft
+- Liability for damages including personality replication and commercial exploitation
+- Injunctive relief to prevent further violations
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
