@@ -1,4 +1,6 @@
-name: "CodeQL Advanced Analysis"
+# .github/workflows/codeql.yml
+
+name: "CodeQL Analysis (Docs-Only Safe Mode)"
 
 on:
   push:
@@ -6,30 +8,13 @@ on:
   pull_request:
     branches: [ Chloee ]
   schedule:
-    - cron: '0 7 * * 1'  # 每週一早上 UTC+0 時間執行
+    - cron: '0 8 * * 1'  # 每週一上午 8 點執行
 
 jobs:
   analyze:
-    name: Analyze
+    name: Analyze (Docs & Config Oriented)
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'ruby' ]
-
+    if: ${{ false }}  # 禁用分析，因為本專案不含可靜態分析語言
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
-      with:
-        languages: ${{ matrix.language }}
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
+      - name: Skip CodeQL for non-codebase project
+        run: echo "Skipping CodeQL: No supported languages (like Python, JS, etc) detected."
