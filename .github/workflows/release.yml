@@ -1,54 +1,39 @@
-name: 🚀 Chloee-CrossFrame-SE Release Automation
+# .github/workflows/release.yml
+
+name: Release
+
+permissions:  # ✅ 設定全域為 read-only
+  contents: read
 
 on:
   push:
     tags:
-      - 'v*.*.*'
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Release version (e.g., v5.0.0)'
-        required: true
-        default: 'v5.0.0'
-      release_type:
-        description: 'Release type'
-        required: true
-        default: 'release'
-        type: choice
-        options:
-        - release
-        - pre-release
-        - hotfix
+      - "v*.*.*"
 
 jobs:
   validate-license:
-    name: 🔐 License & Attribution Validation
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-      
-    - name: Validate LICENSE File
-      run: |
-        if [[ -f "LICENSE" ]]; then
-          echo "✅ LICENSE file found"
-        else
-          echo "❌ LICENSE file not found"
-          exit 1
-        fi
-    
-    - name: Test Complete
-      run: echo "✅ Basic validation completed"
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Validate LICENSE
+        run: cat LICENSE | grep MIT
 
   create-release:
-    name: 🎉 Create GitHub Release
-    runs-on: ubuntu-latest
     needs: validate-license
+    runs-on: ubuntu-latest
+
+    permissions:  # ✅ 僅在這個 Job 增加需要的 write 權限
+      contents: write
+      pull-requests: write
+
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-      
-    - name: Create Release
-      run: |
-        echo "🎉 Release process would run here"
-        echo "Version: ${{ github.event.inputs.version || github.ref_name }}"
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/*.whl
+            dist/*.tar.gz
