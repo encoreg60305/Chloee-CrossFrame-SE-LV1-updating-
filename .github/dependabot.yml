@@ -1,21 +1,13 @@
+# .github/dependabot.yml
+
 version: 2
 updates:
-  - package-ecosystem: "pip"
-    directory: "/"  # 根目錄含 pyproject.toml
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    rebase-strategy: "auto"
-    labels:
-      - "dependencies"
-      - "security"
-
   - package-ecosystem: "github-actions"
-    directory: "/"  # 掃 .github/workflows/
+    directory: "/"                # 根目錄為 .github/workflows/
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 3
-    rebase-strategy: "auto"
     labels:
-      - "CI"
-      - "security"
+      - dependencies
+      - github-actions
+    open-pull-requests-limit: 5
+    rebase-strategy: auto
